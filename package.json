@@ -1,7 +1,7 @@
 {
   "name": "moj_elements",
   "version": "0.2.1",
-  "description": "CSS and JavaScript for MOJ Digital Serivces which are not already available in GOV.UK Elements",
+  "description": "A JavaScript trigger an alert and then redirect after a set time",
   "engines": {
     "node": ">= 0.10.0"
   },
