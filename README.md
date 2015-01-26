@@ -35,12 +35,12 @@ moj.Modules.TimeoutPrompt().init();
 
 ### Required files
 
-    handlebars.js
+    lodash.js
     moj.TimeoutPrompt.js
 
 ### Mark-up
 
-Place the template in the DOM where you would like the alert to be displayed. Handlebars.js then appends `TimeoutPrompt-alert` to the `TimeoutPrompt` element to display it to the user.
+Place the template in the DOM where you would like the alert to be displayed. Lodash.js then appends `TimeoutPrompt-alert` to the `TimeoutPrompt` element to display it to the user.
 
 ```html
 <div class="TimeoutPrompt">

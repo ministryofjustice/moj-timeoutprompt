@@ -1,5 +1,5 @@
 // Timeout prompt for MOJ
-// Dependencies: moj, jQuery, Handlebars
+// Dependencies: moj, jQuery, lodash
 
 (function () {
 
@@ -61,7 +61,7 @@
       var template;
 
       if ($tmpl.length) {
-        template = Handlebars.compile($tmpl.html());
+        template = _.template($tmpl.html());
 
         return template({
           respondTime: this.settings.respondMinutes

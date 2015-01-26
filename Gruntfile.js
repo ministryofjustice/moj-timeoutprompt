@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           vendor: [
             'node_modules/jquery-browser/lib/jquery.js',
             'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
-            'bower_components/handlebars/handlebars.js'
+            'bower_components/lodash/lodash.js'
           ],
           specs: 'spec/unit/*Spec.js'
         }
