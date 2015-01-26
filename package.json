@@ -1,6 +1,6 @@
 {
   "name": "moj_elements",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CSS and JavaScript for MOJ Digital Serivces which are not already available in GOV.UK Elements",
   "engines": {
     "node": ">= 0.10.0"
