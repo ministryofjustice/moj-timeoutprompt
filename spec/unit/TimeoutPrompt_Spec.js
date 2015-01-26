@@ -6,7 +6,7 @@ describe('TimeoutPrompt', function() {
   };
 
   beforeEach(function() {
-    $fixture = $('<div class="TimeoutPrompt"><script type="text/html" class="TimeoutPrompt-template"><div class="TimeoutPrompt-alert"><p>Would you like to continue?</p><button class="TimeoutPrompt-extend">Yes</button></div></script></div>');
+    $fixture = $('<div class="TimeoutPrompt"><script type="text/html" class="TimeoutPrompt-template"><div class="TimeoutPrompt-alert"><h2 id="timeoutTitle">Your session will will expire in {{ respondTime }} minutes</h2><p>Would you like to continue?</p><button class="TimeoutPrompt-extend">Yes</button></div></script></div>');
     $('body').append($fixture);
 
     jasmine.clock().install();
@@ -32,6 +32,12 @@ describe('TimeoutPrompt', function() {
 
   it('is not initially visible', function() {
     expect($('.TimeoutPrompt-alert')).not.toExist();
+  });
+
+  it('displays the respond time in the alert', function() {
+    subject = new moj.Modules._TimeoutPrompt($fixture);
+    jasmine.clock().tick(minutes(17));
+    expect($('.TimeoutPrompt-alert')).toContainText('in 3 minutes');
   });
 
   describe('alert', function() {

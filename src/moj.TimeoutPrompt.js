@@ -1,6 +1,8 @@
 // Timeout prompt for MOJ
 // Dependencies: moj, jQuery, lodash
 
+_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+
 (function () {
 
   'use strict';
