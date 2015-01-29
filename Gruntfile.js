@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       },
       javascripts: {
         files: '<%= jshint.javascripts.src %>',
-        tasks: ['jshint:javascript']
+        tasks: ['jshint']
       }
     },
 
