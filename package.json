@@ -1,6 +1,6 @@
 {
   "name": "moj_elements",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A JavaScript trigger an alert and then redirect after a set time",
   "engines": {
     "node": ">= 0.10.0"

@@ -1,6 +1,6 @@
 {
   "name": "MOJ Timeout Prompt",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "homepage": "https://github.com/ministryofjustice/moj-timeoutprompt",
   "authors": [
     "Mat Harden <matharden@gmail.com>"
