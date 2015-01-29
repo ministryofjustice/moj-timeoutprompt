@@ -96,6 +96,11 @@ _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
         self.startTimeout(self.settings.timeoutDuration);
         clearTimeout(self.respond);
       });
+    },
+
+    someDirtyMethod: function()
+    {
+      return 'duff'
     }
   };
 
