@@ -42,6 +42,19 @@ module.exports = function(grunt) {
         files: '<%= jshint.javascripts.src %>',
         tasks: ['jshint:javascript']
       }
+    },
+
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json'],
+        commit: true,
+        commitMessage: 'Bump version to v%VERSION%',
+        commitFiles: ['package.json', 'bower.json'],
+        createTag: true,
+        tagName: 'v%VERSION%',
+        push: true,
+        pushTo: 'master'
+      }
     }
 
   });
@@ -50,6 +63,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-bump');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'jasmine']);
